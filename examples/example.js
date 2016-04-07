@@ -1,17 +1,15 @@
-var Client = require('../lib/client.js');
-var globalRequest = {};
+var Client = require('../lib/client.js').Client;
+var emptyRequest = require('../lib/client.js').request;
+var globalRequest = JSON.parse(JSON.stringify(emptyRequest));
 globalRequest.host = 'e9sk3d3bfaikbpdq7.stoplight-proxy.io';
-globalRequest.headers = {};
 globalRequest.headers['Content-Type'] = 'application/json';
 globalRequest.headers['Authorization'] = 'Bearer '.concat(process.env.SENDGRID_API_KEY);
 var client = new Client(globalRequest);
-console.log(client.request);
 
 // GET Collection
-var requestGet = {};
+var requestGet = JSON.parse(JSON.stringify(emptyRequest));;
 requestGet.method = 'GET';
 requestGet.path = '/v3/api_keys';
-requestGet.queryParams = {};
 requestGet.queryParams["limit"] = 100;
 requestGet.queryParams["offset"] = 0;
 client.API(requestGet, function (response){
@@ -29,11 +27,10 @@ requestBody = {
             "alerts.read"
         ]
     }
-var requestPost = {};
+var requestPost = JSON.parse(JSON.stringify(emptyRequest));;
 requestPost.method = 'POST';
 requestPost.path = '/v3/api_keys';
 requestPost.requestBody = requestBody;
-requestPost.headers = {};
 requestPost.headers['X-Test'] = 'test';
 function createAPIKey(callback){
     client.API(requestPost, function (response){
@@ -49,7 +46,7 @@ createAPIKey(function(returnValue) {
     api_key_id = '/'.concat(returnValue);
 
     // GET SINGLE
-    var requestGetSingle = {};
+    var requestGetSingle = JSON.parse(JSON.stringify(emptyRequest));;
     requestGetSingle.method = 'GET';
     requestGetSingle.path = '/v3/api_keys'.concat(api_key_id);
     client.API(requestGetSingle, function (response){
@@ -62,7 +59,7 @@ createAPIKey(function(returnValue) {
     requestBody = {
         "name": "A New Hope"
     }
-    var requestPatch = {};
+    var requestPatch = JSON.parse(JSON.stringify(emptyRequest));;
     requestPatch.method = 'PATCH'
     requestPatch.path = '/v3/api_keys'.concat(api_key_id);
     requestPatch.requestBody = requestBody;
@@ -80,7 +77,7 @@ createAPIKey(function(returnValue) {
             "user.profile.update"
         ]
     }
-    var requestPut = {};
+    var requestPut = JSON.parse(JSON.stringify(emptyRequest));;
     requestPut.method = 'PUT';
     requestPut.path = '/v3/api_keys'.concat(api_key_id);
     requestPut.requestBody = requestBody;
@@ -91,7 +88,7 @@ createAPIKey(function(returnValue) {
     });  
 
     // DELETE
-    var requestDelete = {};
+    var requestDelete = JSON.parse(JSON.stringify(emptyRequest));;
     requestDelete.method = 'DELETE';
     requestDelete.path = '/v3/api_keys'.concat(api_key_id);
     client.API(requestDelete, function (response){
