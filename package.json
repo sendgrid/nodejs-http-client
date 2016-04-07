@@ -15,7 +15,11 @@
     "node": ">= 0.4.7"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+      "mocha": "^2.4.5",
+      "chai": "^3.5.0",
+      "nock": "^8.0.0"
+  },
   "scripts": {},
   "license": "MIT",
   "optionalDependencies": {}
