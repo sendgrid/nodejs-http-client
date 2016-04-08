@@ -165,7 +165,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
 
 # Roadmap
 
-[Milestones](https://github.com/sendgrid/nodejs-http-client/milestones)
+[Milestones](https://github.com/sendgrid/nodejs-http-client/milestones) [![NPM version](https://badge.fury.io/js/sendgrid-rest.svg)](http://badge.fury.io/js/sendgrid-rest)
 
 # How to Contribute
 
