@@ -3,20 +3,22 @@
   "contributors": [
     "Elmer Thomas <elmer.thomas@sendgrid.com>"
   ],
-  "name": "node-rest-client",
+  "name": "sendgrid-rest",
   "description": "HTTP REST client, simplified for Node.js.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://sendgrid.com",
   "repository": {
     "type": "git",
     "url": "git://github.com/sendgrid/node-rest-client.git"
   },
+  "bugs": {
+      "url": "https://github.com/sendgrid/node-rest-client/issues"
+  },
+  "main": "./lib/client",
   "engines": {
-    "node": ">= 0.8"
+    "node": ">= 0.10"
   },
-  "dependencies": {
-    "touch": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^2.7.0",
@@ -28,6 +30,11 @@
   "scripts": {
       "test": "mocha"
   },
+  "tags": [
+    "http",
+    "rest",
+    "api"
+  ],
   "license": "MIT",
   "optionalDependencies": {}
 }

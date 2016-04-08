@@ -7,8 +7,8 @@ Here is a quick example:
 `GET /your/api/{param}/call`
 
 ```javascript
-var Client = require('nodejs-http-client').Client
-var emptyRequest = require('nodejs-http-client').request
+var Client = require('sendgrid-rest').Client
+var emptyRequest = require('sendgrid-rest').request
 var client = new Client(globalRequest)
 var request = JSON.parse(JSON.stringify(emptyRequest))
 var param = 'myparam'
@@ -25,8 +25,8 @@ client.API(request, function (response) {
 `POST /your/api/{param}/call` with headers, query parameters and a request body.
 
 ```javascript
-var Client = require('nodejs-http-client').Client
-var emptyRequest = require('nodejs-http-client').request
+var Client = require('sendgrid-rest').Client
+var emptyRequest = require('sendgrid-rest').request
 var client = new Client(globalRequest)
 var request = JSON.parse(JSON.stringify(emptyRequest))
 request.host = 'api.example.com'
@@ -51,7 +51,7 @@ client.API(request, function (response) {
 
 # Installation
 
-`npm install nodejs-http-client`
+`npm install sendgrid-rest`
 
 ## Usage ##
 
@@ -72,8 +72,8 @@ node examples/example
 ```
 
 ```javascript
-var Client = require('../lib/client.js').Client
-var emptyRequest = require('../lib/client.js').request
+var Client = require('sendgrid-rest').Client
+var emptyRequest = require('sendgrid-rest').request
 
 // These values persist across of subsequent calls, unless overidden.
 var globalRequest = JSON.parse(JSON.stringify(emptyRequest))
