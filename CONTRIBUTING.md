@@ -72,7 +72,7 @@ We welcome direct contributions to the rest code base. Thank you!
 
 ##### Prerequisites #####
 
-* Node.js 0.9 and up
+* Node.js 0.10 and up
 * Please see [package.json](https://github.com/sendgrid/nodejs-http-client/blob/master/package.json)
 
 ##### Initial setup: #####
