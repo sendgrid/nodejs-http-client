@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sendgrid/rest.svg?branch=master)](https://travis-ci.org/sendgrid/nodejs-http-client)
+[![Build Status](https://travis-ci.org/sendgrid/rest.svg?branch=master)](https://travis-ci.org/sendgrid/nodejs-http-client) [![NPM version](https://badge.fury.io/js/sendgrid-rest.svg)](http://badge.fury.io/js/sendgrid-rest)
 
 **HTTP REST client, simplified for Node.js**
 
@@ -165,7 +165,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
 
 # Roadmap
 
-[Milestones](https://github.com/sendgrid/nodejs-http-client/milestones) [![NPM version](https://badge.fury.io/js/sendgrid-rest.svg)](http://badge.fury.io/js/sendgrid-rest)
+[Milestones](https://github.com/sendgrid/nodejs-http-client/milestones)
 
 # How to Contribute
 
