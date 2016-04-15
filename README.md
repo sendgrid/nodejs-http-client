@@ -55,7 +55,7 @@ client.API(request, function (response) {
 
 ## Usage ##
 
-Following is an example using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=python-http-client).
+Following is an example using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
 
 First, update your environment with your [SENDGRID_API_KEY](https://app.sendgrid.com/settings/api_keys).
 
