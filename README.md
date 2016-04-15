@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sendgrid/rest.svg?branch=master)](https://travis-ci.org/sendgrid/nodejs-http-client) [![NPM version](https://badge.fury.io/js/sendgrid-rest.svg)](http://badge.fury.io/js/sendgrid-rest)
+[![Build Status](https://travis-ci.org/sendgrid/nodejs-http-client.svg?branch=master)](https://travis-ci.org/sendgrid/nodejs-http-client) [![NPM version](https://badge.fury.io/js/sendgrid-rest.svg)](http://badge.fury.io/js/sendgrid-rest)
 
 **HTTP REST client, simplified for Node.js**
 
