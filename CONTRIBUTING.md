@@ -102,7 +102,7 @@ node examples/example.js
 
 Working examples that demonstrate usage.
 
-**client.go**
+**client.js**
 
 There is a object to hold both the request and response to the API server. 
 
