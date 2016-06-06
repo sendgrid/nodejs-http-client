@@ -17,8 +17,8 @@ requestGet.queryParams['limit'] = 100
 requestGet.queryParams['offset'] = 0
 client.API(requestGet, function (response) {
   console.log(response.statusCode)
-  console.log(response.responseBody)
-  console.log(response.responseHeaders)
+  console.log(response.body)
+  console.log(response.headers)
 })
 
 // POST
@@ -33,14 +33,14 @@ var requestBody = {
 var requestPost = JSON.parse(JSON.stringify(emptyRequest));
 requestPost.method = 'POST'
 requestPost.path = '/v3/api_keys'
-requestPost.requestBody = requestBody
+requestPost.body = requestBody
 requestPost.headers['X-Test'] = 'test'
 function createAPIKey (callback) {
   client.API(requestPost, function (response) {
     console.log(response.statusCode)
-    console.log(response.responseBody)
-    console.log(response.responseHeaders)
-    var body = JSON.parse(response.responseBody)
+    console.log(response.body)
+    console.log(response.headers)
+    var body = JSON.parse(response.body)
     callback(body.api_key_id)
   })
 }
@@ -54,8 +54,8 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   requestGetSingle.path = '/v3/api_keys'.concat(api_key_id)
   client.API(requestGetSingle, function (response) {
     console.log(response.statusCode)
-    console.log(response.responseBody)
-    console.log(response.responseHeaders)
+    console.log(response.body)
+    console.log(response.headers)
   })
 
   // PATCH
@@ -65,11 +65,11 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   var requestPatch = JSON.parse(JSON.stringify(emptyRequest))
   requestPatch.method = 'PATCH'
   requestPatch.path = '/v3/api_keys'.concat(api_key_id)
-  requestPatch.requestBody = requestBody
+  requestPatch.body = requestBody
   client.API(requestPatch, function (response) {
     console.log(response.statusCode)
-    console.log(response.responseBody)
-    console.log(response.responseHeaders)
+    console.log(response.body)
+    console.log(response.headers)
   })
 
   // PUT
@@ -83,11 +83,11 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   var requestPut = JSON.parse(JSON.stringify(emptyRequest))
   requestPut.method = 'PUT'
   requestPut.path = '/v3/api_keys'.concat(api_key_id)
-  requestPut.requestBody = requestBody
+  requestPut.body = requestBody
   client.API(requestPut, function (response) {
     console.log(response.statusCode)
-    console.log(response.responseBody)
-    console.log(response.responseHeaders)
+    console.log(response.body)
+    console.log(response.headers)
   })
 
   // DELETE
@@ -96,7 +96,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   requestDelete.path = '/v3/api_keys'.concat(api_key_id)
   client.API(requestDelete, function (response) {
     console.log(response.statusCode)
-    console.log(response.responseBody)
-    console.log(response.responseHeaders)
+    console.log(response.body)
+    console.log(response.headers)
   })
 })

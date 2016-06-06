@@ -27,11 +27,11 @@ describe('Client', function () {
       requestGet.queryParams['offset'] = 0
       client.API(requestGet, function (response) {
         assert.equal(response.statusCode, '200', 'response.StatusCode equal 200')
-        assert.equal(response.responseBody,
-          '{"message":"Success"}', 'response.responseBody equal {"message":"Success"}')
-        assert.equal(JSON.stringify(response.responseHeaders),
+        assert.equal(response.body,
+          '{"message":"Success"}', 'response.body equal {"message":"Success"}')
+        assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
-          'response.responseHeaders equal {"content-type": "application/json"}')
+          'response.headers equal {"content-type": "application/json"}')
         done()
       })
     })
@@ -56,21 +56,21 @@ describe('Client', function () {
       var requestPost = JSON.parse(JSON.stringify(emptyRequest))
       requestPost.method = 'POST'
       requestPost.path = '/test'
-      requestPost.requestBody = requestBody
+      requestPost.body = requestBody
       requestPost.queryParams['limit'] = 100
       requestPost.queryParams['offset'] = 0
       requestPost.headers['X-Test'] = 'test'
       client.API(requestPost, function (response) {
         assert.equal(response.statusCode, '201', 'response.StatusCode equal 200')
-        assert.equal(JSON.parse(response.responseBody).path,
+        assert.equal(JSON.parse(response.body).path,
           '/test?limit=100&offset=0',
           'path equal to /test?limit=100&offset=0')
-        assert.equal(JSON.stringify(JSON.parse(response.responseBody).headers),
+        assert.equal(JSON.stringify(JSON.parse(response.body).headers),
           '{"x-test":"test","content-length":20,"host":"api.test.com"}',
             'headers equal {"x-test":"test","content-length":20,"host":"api.test.com"}')
-        assert.equal(JSON.stringify(response.responseHeaders),
+        assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
-          'response.responseHeaders equal {"content-type":"application/json"}')
+          'response.headers equal {"content-type":"application/json"}')
         done()
       })
     })
@@ -89,11 +89,11 @@ describe('Client', function () {
       requestGet.path = '/test'
       client.API(requestGet, function (response) {
         assert.equal(response.statusCode, '200', 'response.StatusCode equal 200')
-        assert.equal(response.responseBody, '{"message":"Success"}',
-          'response.responseBody equal {"message":"Success"}')
-        assert.equal(JSON.stringify(response.responseHeaders),
+        assert.equal(response.body, '{"message":"Success"}',
+          'response.body equal {"message":"Success"}')
+        assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
-          'response.responseHeaders equal {"content-type":"application/json"}')
+          'response.headers equal {"content-type":"application/json"}')
       })
 
       nock(TEST_HOST)
@@ -105,16 +105,16 @@ describe('Client', function () {
         'test': 'Test Body'
       }
       var requestPost = JSON.parse(JSON.stringify(emptyRequest))
-      requestPost.requestBody = requestBody
+      requestPost.body = requestBody
       requestPost.method = 'POST'
       requestPost.path = '/test'
       client.API(requestPost, function (response) {
         assert.equal(response.statusCode, '201', 'response.StatusCode equal 201')
-        assert.equal(response.responseBody, '{"message":"Success"}',
-          'response.responseBody equal {"message":"Success"}')
-        assert.equal(JSON.stringify(response.responseHeaders),
+        assert.equal(response.body, '{"message":"Success"}',
+          'response.body equal {"message":"Success"}')
+        assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
-          'response.responseHeaders equal {"content-type":"application/json"}')
+          'response.headers equal {"content-type":"application/json"}')
       })
       nock(TEST_HOST)
         .patch('/test')
@@ -122,16 +122,16 @@ describe('Client', function () {
           message: 'Success'
         })
       var requestPatch = JSON.parse(JSON.stringify(emptyRequest))
-      requestPatch.requestBody = requestBody
+      requestPatch.body = requestBody
       requestPatch.method = 'PATCH'
       requestPatch.path = '/test'
       client.API(requestPatch, function (response) {
         assert.equal(response.statusCode, '200', 'response.StatusCode equal 200')
-        assert.equal(response.responseBody, '{"message":"Success"}',
-          'response.responseBody equal {"message":"Success"}')
-        assert.equal(JSON.stringify(response.responseHeaders),
+        assert.equal(response.body, '{"message":"Success"}',
+          'response.body equal {"message":"Success"}')
+        assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
-          'response.responseHeaders equal {"content-type":"application/json"}')
+          'response.headers equal {"content-type":"application/json"}')
       })
 
       nock(TEST_HOST)
@@ -140,16 +140,16 @@ describe('Client', function () {
           message: 'Success'
         })
       var requestPut = JSON.parse(JSON.stringify(emptyRequest))
-      requestPut.requestBody = requestBody
+      requestPut.body = requestBody
       requestPut.method = 'PUT'
       requestPut.path = '/test'
       client.API(requestPut, function (response) {
         assert.equal(response.statusCode, '200', 'response.StatusCode equal 200')
-        assert.equal(response.responseBody, '{"message":"Success"}',
-          'response.responseBody equal {"message":"Success"}')
-        assert.equal(JSON.stringify(response.responseHeaders),
+        assert.equal(response.body, '{"message":"Success"}',
+          'response.body equal {"message":"Success"}')
+        assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
-          'response.responseHeaders equal {"content-type":"application/json"}')
+          'response.headers equal {"content-type":"application/json"}')
       })
 
       nock(TEST_HOST)
@@ -162,11 +162,11 @@ describe('Client', function () {
       requestDelete.path = '/test'
       client.API(requestDelete, function (response) {
         assert.equal(response.statusCode, '204', 'response.StatusCode equal 204')
-        assert.equal(response.responseBody, '{"message":"Success"}',
-          'response.responseBody equal {"message":"Success"}')
-        assert.equal(JSON.stringify(response.responseHeaders),
+        assert.equal(response.body, '{"message":"Success"}',
+          'response.body equal {"message":"Success"}')
+        assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
-          'response.responseHeaders equal {"content-type":"application/json"}')
+          'response.headers equal {"content-type":"application/json"}')
       })
       done()
     })

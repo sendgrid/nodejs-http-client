@@ -27,8 +27,8 @@ request.method = 'GET'
 request.path = '/your/api/' + param + '/call'
 client.API(request, function (response) {
   console.log(response.statusCode)
-  console.log(response.responseBody)
-  console.log(response.responseHeaders)
+  console.log(response.body)
+  console.log(response.headers)
 })
 ```
 
@@ -51,11 +51,11 @@ requestBody = {
   'awesome': 1,
   'data': 3
 }
-request.requestBody = requestBody
+request.body = requestBody
 client.API(request, function (response) {
   console.log(response.statusCode)
-  console.log(response.responseBody)
-  console.log(response.responseHeaders)
+  console.log(response.body)
+  console.log(response.headers)
 })
 ```
 
