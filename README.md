@@ -19,8 +19,7 @@ npm install sendgrid-rest
 ```javascript
 var Client = require('sendgrid-rest').Client
 var client = new Client()
-var emptyRequest = require('sendgrid-rest').request
-var request = JSON.parse(JSON.stringify(emptyRequest))
+var request = client.emptyRequest()
 var param = 'myparam'
 request.host = 'api.example.com'
 request.method = 'GET'
@@ -37,8 +36,7 @@ client.API(request, function (response) {
 ```javascript
 var Client = require('sendgrid-rest').Client
 var client = new Client()
-var emptyRequest = require('sendgrid-rest').request
-var request = JSON.parse(JSON.stringify(emptyRequest))
+var request = client.emptyRequest()
 request.host = 'api.example.com'
 request.headers['Authorization'] = 'Bearer XXXXXX'
 request.queryParams['limit'] = 100

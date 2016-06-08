@@ -1,8 +1,7 @@
 var Client = require('../lib/client.js').Client
-var emptyRequest = require('../lib/client.js').request
 
 // These values persist across of subsequent calls, unless overidden.
-var globalRequest = JSON.parse(JSON.stringify(emptyRequest))
+var globalRequest = require('../lib/client.js').emptyRequest
 globalRequest.host = 'api.sendgrid.com';
 globalRequest.headers['Content-Type'] = 'application/json'
 // You must add your SendGrid API Key to your OS Environment
@@ -10,7 +9,7 @@ globalRequest.headers['Authorization'] = 'Bearer '.concat(process.env.SENDGRID_A
 var client = new Client(globalRequest)
 
 // GET Collection
-var requestGet = JSON.parse(JSON.stringify(emptyRequest))
+var requestGet = client.emptyRequest()
 requestGet.method = 'GET'
 requestGet.path = '/v3/api_keys'
 requestGet.queryParams['limit'] = 100
@@ -30,7 +29,7 @@ var requestBody = {
     'alerts.read'
   ]
 }
-var requestPost = JSON.parse(JSON.stringify(emptyRequest));
+var requestPost = client.emptyRequest()
 requestPost.method = 'POST'
 requestPost.path = '/v3/api_keys'
 requestPost.body = requestBody
@@ -49,7 +48,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   var api_key_id = '/'.concat(returnValue)
 
   // GET SINGLE
-  var requestGetSingle = JSON.parse(JSON.stringify(emptyRequest))
+  var requestGetSingle = client.emptyRequest()
   requestGetSingle.method = 'GET'
   requestGetSingle.path = '/v3/api_keys'.concat(api_key_id)
   client.API(requestGetSingle, function (response) {
@@ -62,7 +61,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   requestBody = {
     'name': 'A New Hope'
   }
-  var requestPatch = JSON.parse(JSON.stringify(emptyRequest))
+  var requestPatch = client.emptyRequest()
   requestPatch.method = 'PATCH'
   requestPatch.path = '/v3/api_keys'.concat(api_key_id)
   requestPatch.body = requestBody
@@ -80,7 +79,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
       'user.profile.update'
     ]
   }
-  var requestPut = JSON.parse(JSON.stringify(emptyRequest))
+  var requestPut = client.emptyRequest()
   requestPut.method = 'PUT'
   requestPut.path = '/v3/api_keys'.concat(api_key_id)
   requestPut.body = requestBody
@@ -91,7 +90,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   })
 
   // DELETE
-  var requestDelete = JSON.parse(JSON.stringify(emptyRequest))
+  var requestDelete = client.emptyRequest()
   requestDelete.method = 'DELETE'
   requestDelete.path = '/v3/api_keys'.concat(api_key_id)
   client.API(requestDelete, function (response) {

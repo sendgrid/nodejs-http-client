@@ -4,8 +4,7 @@ var nock = require('nock')
 var TEST_HOST = 'https://api.test.com'
 
 var Client = require('../lib/client.js').Client
-var emptyRequest = require('../lib/client.js').request
-var globalRequest = JSON.parse(JSON.stringify(emptyRequest))
+var globalRequest = require('../lib/client.js').emptyRequest
 globalRequest.host = 'api.test.com'
 
 describe('Client', function () {
@@ -20,7 +19,7 @@ describe('Client', function () {
           message: 'Success'
         })
 
-      var requestGet = JSON.parse(JSON.stringify(emptyRequest))
+      var requestGet = client.emptyRequest()
       requestGet.method = 'GET'
       requestGet.path = '/test'
       requestGet.queryParams['limit'] = 100
@@ -53,7 +52,7 @@ describe('Client', function () {
       var requestBody = {
         'test': 'Test Body'
       }
-      var requestPost = JSON.parse(JSON.stringify(emptyRequest))
+      var requestPost = client.emptyRequest()
       requestPost.method = 'POST'
       requestPost.path = '/test'
       requestPost.body = requestBody
@@ -84,7 +83,7 @@ describe('Client', function () {
         .reply(200, {
           message: 'Success'
         })
-      var requestGet = JSON.parse(JSON.stringify(emptyRequest))
+      var requestGet = client.emptyRequest()
       requestGet.method = 'GET'
       requestGet.path = '/test'
       client.API(requestGet, function (response) {
@@ -104,7 +103,7 @@ describe('Client', function () {
       var requestBody = {
         'test': 'Test Body'
       }
-      var requestPost = JSON.parse(JSON.stringify(emptyRequest))
+      var requestPost = client.emptyRequest()
       requestPost.body = requestBody
       requestPost.method = 'POST'
       requestPost.path = '/test'
@@ -121,7 +120,7 @@ describe('Client', function () {
         .reply(200, {
           message: 'Success'
         })
-      var requestPatch = JSON.parse(JSON.stringify(emptyRequest))
+      var requestPatch = client.emptyRequest()
       requestPatch.body = requestBody
       requestPatch.method = 'PATCH'
       requestPatch.path = '/test'
@@ -139,7 +138,7 @@ describe('Client', function () {
         .reply(200, {
           message: 'Success'
         })
-      var requestPut = JSON.parse(JSON.stringify(emptyRequest))
+      var requestPut = client.emptyRequest()
       requestPut.body = requestBody
       requestPut.method = 'PUT'
       requestPut.path = '/test'
@@ -157,7 +156,7 @@ describe('Client', function () {
         .reply(204, {
           message: 'Success'
         })
-      var requestDelete = JSON.parse(JSON.stringify(emptyRequest))
+      var requestDelete = client.emptyRequest()
       requestDelete.method = 'DELETE'
       requestDelete.path = '/test'
       client.API(requestDelete, function (response) {
