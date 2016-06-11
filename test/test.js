@@ -65,8 +65,8 @@ describe('Client', function () {
           '/test?limit=100&offset=0',
           'path equal to /test?limit=100&offset=0')
         assert.equal(JSON.stringify(JSON.parse(response.body).headers),
-          '{"x-test":"test","content-length":20,"host":"api.test.com"}',
-            'headers equal {"x-test":"test","content-length":20,"host":"api.test.com"}')
+          '{"x-test":"test","content-length":20,"content-type":"application/json","host":"api.test.com"}',
+            'headers equal {"x-test":"test","content-length":20,"content-type":"application/json","host":"api.test.com"}')
         assert.equal(JSON.stringify(response.headers),
           '{"content-type":"application/json"}',
           'response.headers equal {"content-type":"application/json"}')

@@ -3,7 +3,6 @@ var Client = require('../lib/client.js').Client
 // These values persist across of subsequent calls, unless overidden.
 var globalRequest = require('../lib/client.js').emptyRequest
 globalRequest.host = 'api.sendgrid.com';
-globalRequest.headers['Content-Type'] = 'application/json'
 // You must add your SendGrid API Key to your OS Environment
 globalRequest.headers['Authorization'] = 'Bearer '.concat(process.env.SENDGRID_API_KEY)
 var client = new Client(globalRequest)
