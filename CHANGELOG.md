@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.2.1] - 2016-06-15
+### Fixed
+- Sending email with accents: https://github.com/sendgrid/sendgrid-nodejs/issues/239
+- Thanks [eaparango](https://github.com/eaparango)!
+
 ## [2.2.0] - 2016-06-10
 ### Added
 - Automatically add Content-Type: application/json when there is a request body

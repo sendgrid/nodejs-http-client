@@ -5,7 +5,7 @@
   ],
   "name": "sendgrid-rest",
   "description": "HTTP REST client, simplified for Node.js.",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "homepage": "https://sendgrid.com",
   "repository": {
     "type": "git",
