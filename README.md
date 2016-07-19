@@ -10,6 +10,12 @@ All updates to this library is documented in our [CHANGELOG](https://github.com/
 
 # Installation
 
+## Prerequisites
+
+- Node.js version 0.10, 0.12 or 4
+
+## Install Package
+
 ```bash
 npm install sendgrid-rest
 ```
@@ -81,7 +87,7 @@ node examples/example
 
 ## Roadmap
 
-If you are intersted in the future direction of this project, please take a look at our [milestones](https://github.com/sendgrid/nodejs-http-client/milestones). We would love to hear your feedback.
+If you are interested in the future direction of this project, please take a look at our [milestones](https://github.com/sendgrid/nodejs-http-client/milestones). We would love to hear your feedback.
 
 ## How to Contribute
 

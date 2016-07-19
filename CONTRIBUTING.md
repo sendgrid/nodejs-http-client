@@ -64,7 +64,7 @@ We welcome direct contributions to the nodejs-http-client code base. Thank you!
 
 ##### Prerequisites #####
 
-- Node.js 0.10 and up
+- Node.js version 0.10, 0.12 or 4
 - Please see [package.json](https://github.com/sendgrid/nodejs-http-client/blob/master/package.json)
 
 ##### Initial setup: #####
