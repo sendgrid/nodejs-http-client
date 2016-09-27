@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.2.2] - 2016-09-27
+### Fixed
+- Fix GitHub URLs in package.json #4: https://github.com/sendgrid/sendgrid-nodejs/pull/4
+- Thanks [Guilherme Souza](https://github.com/sitegui)!
+
 ## [2.2.1] - 2016-06-15
 ### Fixed
 - Sending email with accents: https://github.com/sendgrid/sendgrid-nodejs/issues/239
