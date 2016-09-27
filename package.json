@@ -9,10 +9,10 @@
   "homepage": "https://sendgrid.com",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sendgrid/node-rest-client.git"
+    "url": "git://github.com/sendgrid/nodejs-http-client.git"
   },
   "bugs": {
-      "url": "https://github.com/sendgrid/node-rest-client/issues"
+      "url": "https://github.com/sendgrid/nodejs-http-client/issues"
   },
   "main": "./lib/client",
   "engines": {
