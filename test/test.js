@@ -169,5 +169,44 @@ describe('Client', function () {
       })
       done()
     })
+
+    it('should consider non-HTTP-200 repsonses to be valid', function (done) {
+      nock(TEST_HOST)
+        .get('/test')
+        .delay(100) // it('should wait for the response before invoking the callback')
+        .reply(503)
+      var requestGet = client.emptyRequest()
+      requestGet.method = 'GET'
+      requestGet.path = '/test'
+      client.API(requestGet, function (response) {
+        assert.equal(response.statusCode, '503', 'response.StatusCode equal 503')
+        assert.equal(response.body, '',
+          'response.body blank')
+        assert.equal(JSON.stringify(response.headers),
+          '{}',
+          'response.headers blank')
+        done()
+      })
+    })
+
+    it('should respond with a mock HTTP 500 response upon Error', function (done) {
+      nock(TEST_HOST)
+        .get('/test')
+        .replyWithError('ERROR')
+      var requestGet = client.emptyRequest()
+      requestGet.method = 'GET'
+      requestGet.path = '/test'
+      client.API(requestGet, function (response) {
+        assert.equal(response.statusCode, '500', 'response.StatusCode equal 500')
+        var body = JSON.parse(response.body)
+        assert.equal(body.message, 'ERROR', 'response.body.message equal ERROR')
+        assert.equal(body.name, Error.name, 'response.body.name equal Error.name')
+        assert.equal(typeof body.stack, 'string', 'response.body.stack is a String')
+        assert.equal(JSON.stringify(response.headers),
+          '{}',
+          'response.headers blank')
+        done()
+      })
+    })
   })
 })
