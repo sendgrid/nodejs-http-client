@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.3.0] - 2016-10-12
+### Added
+- Pull #6, Solves #5
+- Invoke the API callback with a mocked response upon Error
+- Thanks [Dan Foley](https://github.com/cantremember)!
+
 ## [2.2.2] - 2016-09-27
 ### Fixed
 - Fix GitHub URLs in package.json #4: https://github.com/sendgrid/sendgrid-nodejs/pull/4
