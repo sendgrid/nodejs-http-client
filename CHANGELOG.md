@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.4.0] - 2017-07-14
+### Added
+- Pull #8
+- Ability to optionally assign port for requests when calling client API
+- Thanks [Anand Patel](https://github.com/apat183)!
+
 ## [2.3.0] - 2016-10-12
 ### Added
 - Pull #6, Solves #5
