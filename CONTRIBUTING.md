@@ -103,7 +103,7 @@ Working examples that demonstrate usage.
 
 **client.js**
 
-There is a object to hold both the request and response to the API server.
+There is an object to hold both the request and response to the API server.
 
 The main function that does the heavy lifting (and external entry point) is `API`.
 
@@ -161,7 +161,7 @@ Please run your code through:
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely be merged into the main project. Use Git's
+   or your code is unlikely to be merged into the main project. Use Git's
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 

@@ -6,7 +6,7 @@ If you are looking for the SendGrid API client library, please see [this repo](h
 
 # Announcements
 
-All updates to this library is documented in our [CHANGELOG](https://github.com/sendgrid/nodejs-http-client/blob/master/CHANGELOG.md).
+All updates to this library are documented in our [CHANGELOG](https://github.com/sendgrid/nodejs-http-client/blob/master/CHANGELOG.md).
 
 # Installation
 
