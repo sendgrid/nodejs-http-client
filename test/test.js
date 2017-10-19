@@ -209,4 +209,35 @@ describe('Client', function () {
       })
     })
   })
+
+  // limit maxSockets
+  describe('#API()', function () {
+    it('should limit maxSockets', function (done) {
+      var expectedSockets = 10
+      var maxSocketsClient = new Client(globalRequest, expectedSockets)
+      
+      nock(TEST_HOST)
+        .get('/testMax')
+        .reply(200)
+      
+      // monkey patch the http.request
+      var http = require('http')
+      var originalRequest = http.request
+      http.request = function(options, callback){
+        assert.isDefined(options.agent, 'the request should use a custom agent');
+        assert.equal(options.agent.maxSockets, expectedSockets, 'agent.maxSockets should equal expectedSockets')
+        return originalRequest(options, callback)
+      }
+
+      var requestGet = maxSocketsClient.emptyRequest()
+      requestGet.method = 'GET'
+      requestGet.test = true
+      requestGet.path = '/testMax'
+      maxSocketsClient.API(requestGet, function (response) {
+        //restore the opriginal request
+        http.request = originalRequest
+        done()
+      })
+    })
+  })
 })
