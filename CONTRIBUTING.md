@@ -1,19 +1,19 @@
 Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
 
-- [CLAs and CCLAs](#cla)
-- [Roadmap & Milestones](#roadmap)
-- [Feature Request](#feature_request)
-- [Submit a Bug Report](#submit_a_bug_report)
-- [Improvements to the Codebase](#improvements_to_the_codebase)
-- [Understanding the Code Base](#understanding_the_codebase)
+- [CLAs and CCLAs](#clas-and-cclas)
+- [Roadmap & Milestones](#roadmap-and-milestones)
+- [Feature Request](#feature-request)
+- [Submit a Bug Report](#submit-a-bug-report)
+- [Improvements to the Codebase](#improvements-to-the-codebase)
+- [Understanding the Code Base](#understanding-the-codebase)
 - [Testing](#testing)
-- [Style Guidelines & Naming Conventions](#style_guidelines_and_naming_conventions)
-- [Creating a Pull Request](#creating_a_pull_request)
+- [Style Guidelines & Naming Conventions](#style-guidelines-and-naming-conventions)
+- [Creating a Pull Request](#creating-a-pull-request)
 
-<a name="roadmap"></a>
+<a name="roadmap-and-milestones"></a>
 We use [Milestones](https://github.com/sendgrid/nodejs-http-client/milestones) to help define current roadmaps, please feel free to grab an issue from the current milestone. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
 
-<a name="cla"></a>
+<a name="clas-and-cclas"></a>
 ## CLAs and CCLAs
 
 Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
@@ -26,7 +26,7 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 
 There are a few ways to contribute, which we'll enumerate below:
 
-<a name="feature_request"></a>
+<a name="feature-request"></a>
 ## Feature Request
 
 If you'd like to make a feature request, please read this section.
@@ -36,7 +36,7 @@ The GitHub issue tracker is the preferred channel for library feature requests, 
 - Please **search for existing issues** in order to ensure we don't have duplicate bugs/feature requests.
 - Please be respectful and considerate of others when commenting on issues
 
-<a name="submit_a_bug_report"></a>
+<a name="submit-a-bug-report"></a>
 ## Submit a Bug Report
 
 Note: DO NOT include your credentials in ANY code examples, descriptions, or media you make public.
@@ -53,7 +53,7 @@ Before you decide to create a new issue, please try the following:
 
 In order to make the process easier, we've included a [sample bug report template](https://github.com/sendgrid/nodejs-http-client/.github/ISSUE_TEMPLATE) (borrowed from [Ghost](https://github.com/TryGhost/Ghost/)). The template uses [GitHub flavored markdown](https://help.github.com/articles/github-flavored-markdown/) for formatting.
 
-<a name="improvements_to_the_codebase"></a>
+<a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
 
 We welcome direct contributions to the nodejs-http-client code base. Thank you!
@@ -94,7 +94,7 @@ To run the example:
 node ./examples/example.js
 ```
 
-<a name="understanding_the_codebase"></a>
+<a name="understanding-the-codebase"></a>
 ## Understanding the Code Base
 
 **/examples**
@@ -120,7 +120,7 @@ Run the test:
 
 `mocha`
 
-<a name="style_guidelines_and_naming_conventions"></a>
+<a name="style-guidelines-and-naming-conventions"></a>
 ## Style Guidelines & Naming Conventions
 
 Generally, we follow the style guidelines as suggested by the official language. However, we ask that you conform to the styles that already exist in the library. If you wish to deviate, please explain your reasoning.
@@ -131,7 +131,8 @@ Please run your code through:
 
 - [ESLint](http://eslint.org/) with the standard style guide.
 
-## Creating a Pull Request<a name="creating_a_pull_request"></a>
+<a name="creating-a-pull-request"></a>
+## Creating a Pull Request
 
 1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
    and configure the remotes:
