@@ -15,6 +15,16 @@ If you are looking for the SendGrid API client library, please see [this repo](h
 
 All updates to this library are documented in our [CHANGELOG](https://github.com/sendgrid/nodejs-http-client/blob/master/CHANGELOG.md).
 
+# Table of Contents
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [How to Contribute](#contribute)
+- [About](#about)
+- [License](#license)
+
+<a name="installation"></a>
 # Installation
 
 ## Prerequisites
@@ -27,6 +37,7 @@ All updates to this library are documented in our [CHANGELOG](https://github.com
 npm install sendgrid-rest
 ```
 
+<a name="quick-start"></a>
 # Quick Start
 
 `GET /your/api/{param}/call`
@@ -72,6 +83,7 @@ client.API(request, function (response) {
 })
 ```
 
+<a name="usage"></a>
 # Usage
 
 Following is an example using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
@@ -92,20 +104,27 @@ To run the example:
 node examples/example
 ```
 
-## Roadmap
+<a name="roadmap"></a>
+# Roadmap
 
 If you are interested in the future direction of this project, please take a look at our [milestones](https://github.com/sendgrid/nodejs-http-client/milestones). We would love to hear your feedback.
 
-## How to Contribute
+<a name="contribute"></a>
+# How to Contribute
 
 We encourage contribution to our libraries, please see our [CONTRIBUTING](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md) guide for details.
 
-* [Feature Request](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#feature_request)
-* [Bug Reports](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#submit_a_bug_report)
-* [Improvements to the Codebase](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#improvements_to_the_codebase)
+* [Feature Request](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#feature-request)
+* [Bug Reports](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#submit-a-bug-report)
+* [Improvements to the Codebase](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#improvements-to-the-codebase)
 
+<a name="about"></a>
 # About
 
 nodejs-http-client is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
 
 nodejs-http-client is maintained and funded by SendGrid, Inc. The names and logos for nodejs-http-client are trademarks of SendGrid, Inc.
+
+<a name="license"></a>
+# License
+[The MIT License (MIT)](LICENSE.txt)
