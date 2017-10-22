@@ -92,11 +92,11 @@ To run the example:
 node examples/example
 ```
 
-## Roadmap
+# Roadmap
 
 If you are interested in the future direction of this project, please take a look at our [milestones](https://github.com/sendgrid/nodejs-http-client/milestones). We would love to hear your feedback.
 
-## How to Contribute
+# How to Contribute
 
 We encourage contribution to our libraries, please see our [CONTRIBUTING](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md) guide for details.
 
