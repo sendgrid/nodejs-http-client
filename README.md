@@ -1,4 +1,11 @@
+![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+
 [![Build Status](https://travis-ci.org/sendgrid/nodejs-http-client.svg?branch=master)](https://travis-ci.org/sendgrid/nodejs-http-client)
+[![Email Notifications Badge](https://dx.sendgrid.com/badge/nodejs)](https://dx.sendgrid.com/newsletter/nodejs)
+[![npm version](https://badge.fury.io/js/sendgrid-rest.svg)](https://www.npmjs.com/package/sendgrid-rest)
+[![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
+[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/nodejs-http-client.svg)](https://github.com/sendgrid/nodejs-http-client/graphs/contributors)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
 
 **Quickly and easily access any RESTful or RESTful-like API.**
 
@@ -102,5 +109,3 @@ We encourage contribution to our libraries, please see our [CONTRIBUTING](https:
 nodejs-http-client is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
 
 nodejs-http-client is maintained and funded by SendGrid, Inc. The names and logos for nodejs-http-client are trademarks of SendGrid, Inc.
-
-![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
