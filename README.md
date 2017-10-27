@@ -96,7 +96,11 @@ echo "sendgrid.env" >> .gitignore
 source ./sendgrid.env
 ```
 
-You can use the ```.env_example``` file located at "examples" folder. Just copy it to a ```.env``` folder ou can put on your project's root.
+You can copy the .env_example file located in the "examples" folder to ```.env``` in your project's root.
+
+```cp examples/.env_sample .env```
+
+Then add your API Key into the file
 
 Here is the [full working code](https://github.com/sendgrid/nodejs-http-client/blob/master/examples/example.js).
 
