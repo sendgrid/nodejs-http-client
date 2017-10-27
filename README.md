@@ -96,7 +96,7 @@ echo "sendgrid.env" >> .gitignore
 source ./sendgrid.env
 ```
 
-You cand use the ```.env_example``` file located at "examples" folder. Just copy it to a ```.env``` folder ou can put on your project's root.
+You can use the ```.env_example``` file located at "examples" folder. Just copy it to a ```.env``` folder ou can put on your project's root.
 
 Here is the [full working code](https://github.com/sendgrid/nodejs-http-client/blob/master/examples/example.js).
 
@@ -105,6 +105,8 @@ To run the example:
 ```bash
 node examples/example
 ```
+=======
+[Library Usage Documentation](https://github.com/sendgrid/nodejs-http-client/blob/master/USAGE.md)
 
 <a name="roadmap"></a>
 # Roadmap
