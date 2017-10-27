@@ -120,6 +120,18 @@ Run the test:
 
 `mocha`
 
+ ### Documentation
+ 
+ If you would like to auto-generate documentation of the packages, you can do so locally by running:
+
+ `./node_modules/.bin/esdoc`
+
+ Using the .esdoc.json file, esdoc will create documentation in the docs directory. 
+ 
+ ### Checking docs coverage
+ 
+ You will find a coverage.json file in the **docs** directory. This will contain information about the documentation coverage for each of the different files in this repo.
+
 <a name="style-guidelines-and-naming-conventions"></a>
 ## Style Guidelines & Naming Conventions
 
@@ -130,6 +142,7 @@ Generally, we follow the style guidelines as suggested by the official language.
 Please run your code through:
 
 - [ESLint](http://eslint.org/) with the standard style guide.
+- [esdoc](https://github.com/sendgrid/sendgrid-nodejs/blob/master/.github/USAGE.md) to check the documentation coverage of your added code.
 
 <a name="creating-a-pull-request"></a>
 ## Creating a Pull Request
