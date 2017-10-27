@@ -18,7 +18,9 @@
   "engines": {
     "node": ">= 0.10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^2.7.0",

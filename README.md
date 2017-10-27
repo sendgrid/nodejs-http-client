@@ -31,6 +31,16 @@ All updates to this library are documented in our [CHANGELOG](https://github.com
 
 - Node.js version 0.10, 0.12 or 4
 
+You need to have a API key to use the app. To configure the API key in the environment variables follow these steps.
+ - create .env file in the root directory of the project.
+ - Copy the contents of .env_sample file in to the .env file
+ - Once you have obtained the API key, find the environment variable SENDGRID_API_KEY and assign your API key as it's value.
+ As an example it should look like this
+ ```
+ SENDGRID_API_KEY='Ef34Gyt&dfPFC34G';
+ ```
+
+
 ## Install Package
 
 ```bash
