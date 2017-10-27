@@ -142,7 +142,7 @@ Generally, we follow the style guidelines as suggested by the official language.
 Please run your code through:
 
 - [ESLint](http://eslint.org/) with the standard style guide.
-- [esdoc](https://github.com/sendgrid/sendgrid-nodejs/blob/master/.github/USAGE.md) to check the documentation coverage of your added code.
+- [esdoc](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#testing) to check the documentation coverage of your added code.
 
 <a name="creating-a-pull-request"></a>
 ## Creating a Pull Request
