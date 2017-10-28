@@ -1,5 +1,6 @@
 var assert = require('chai').assert
 var nock = require('nock')
+var fs = require('fs')
 
 var TEST_HOST = 'https://api.test.com'
 
@@ -239,5 +240,95 @@ describe('Client', function () {
         done()
       })
     })
+  })
+
+  describe('Project files', function () {
+    it('should have ./Docker file', function (done) {
+      checkFileOrDirectory('Docker')
+      done()
+    })
+
+    it('should have ./docker-compose.yml file', function (done) {
+      checkFileOrDirectory('docker-compose.yml')
+      done()
+    })
+
+    it('should have ./.env_sample file', function (done) {
+      checkFileOrDirectory('.env_sample')
+      done()
+    })
+
+    it('should have ./.gitignore file', function (done) {
+      checkFileOrDirectory('.gitignore')
+      done()
+    })
+
+    it('should have ./.travis.yml file', function (done) {
+      checkFileOrDirectory('.travis.yml')
+      done()
+    })
+
+    it('should have ./.codeclimate.yml file', function (done) {
+      checkFileOrDirectory('.codeclimate.yml')
+      done()
+    })
+
+    it('should have ./CHANGELOG.md file', function (done) {
+      checkFileOrDirectory('CHANGELOG.md')
+      done()
+    })
+
+    it('should have ./CODE_OF_CONDUCT.md file', function (done) {
+      checkFileOrDirectory('CODE_OF_CONDUCT.md')
+      done()
+    })
+
+    it('should have ./CONTRIBUTING.md file', function (done) {
+      checkFileOrDirectory('CONTRIBUTING.md')
+      done()
+    })
+
+    it('should have ./.github/ISSUE_TEMPLATE file', function (done) {
+      checkFileOrDirectory('.github/ISSUE_TEMPLATE')
+      done()
+    })
+
+    it('should have ./LICENSE.md file', function (done) {
+      checkFileOrDirectory('LICENSE.md')
+      done()
+    })
+
+    it('should have ./.github/PULL_REQUEST_TEMPLATE file', function (done) {
+      checkFileOrDirectory('.github/PULL_REQUEST_TEMPLATE')
+      done()
+    })
+
+    it('should have ./README.md file', function (done) {
+      checkFileOrDirectory('README.md')
+      done()
+    })
+    
+    it('should have ./TROUBLESHOOTING.md file', function (done) {
+      checkFileOrDirectory('TROUBLESHOOTING.md')
+      done()
+    })
+    
+    it('should have ./USAGE.md file', function (done) {
+      checkFileOrDirectory('USAGE.md')
+      done()
+    })
+    
+    it('should have ./USE_CASES.md file', function (done) {
+      checkFileOrDirectory('USE_CASES.md')
+      done()
+    })
+
+    function checkFileOrDirectory(fileOrDirectory) {  
+      try {
+        fs.statSync(fileOrDirectory);
+      } catch(e) {
+        assert.isNull(e, 'file or folder doesn\'t exist. '+e);
+      }
+    }
   })
 })
