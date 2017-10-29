@@ -37,7 +37,7 @@ You need to have a API key to use the app. To configure the API key in the envir
  - Once you have obtained the API key, find the environment variable SENDGRID_API_KEY and assign your API key as it's value.
  As an example it should look like this
  ```
- SENDGRID_API_KEY='Ef34Gyt&dfPFC34G';
+ SENDGRID_API_KEY='<YOUR_API_KEY>';
  ```
 
 
