@@ -2,7 +2,7 @@ var Client = require('../lib/client.js').Client
 
 // These values persist across of subsequent calls, unless overidden.
 var globalRequest = require('../lib/client.js').emptyRequest
-globalRequest.host = 'api.sendgrid.com';
+globalRequest.host = 'api.sendgrid.com'
 // You must add your SendGrid API Key to your OS Environment
 globalRequest.headers['Authorization'] = 'Bearer '.concat(process.env.SENDGRID_API_KEY)
 var client = new Client(globalRequest)
@@ -39,17 +39,17 @@ function createAPIKey (callback) {
     console.log(response.body)
     console.log(response.headers)
     var body = JSON.parse(response.body)
-    callback(body.api_key_id)
+    callback(body.apiKeyId)
   })
 }
 
-createAPIKey(function (returnValue) { // This ensures we POST a new key first, to get the api_key_id
-  var api_key_id = '/'.concat(returnValue)
+createAPIKey(function (returnValue) { // This ensures we POST a new key first, to get the apiKeyId
+  var apiKeyId = '/'.concat(returnValue)
 
   // GET SINGLE
   var requestGetSingle = client.emptyRequest()
   requestGetSingle.method = 'GET'
-  requestGetSingle.path = '/v3/api_keys'.concat(api_key_id)
+  requestGetSingle.path = '/v3/api_keys'.concat(apiKeyId)
   client.API(requestGetSingle, function (response) {
     console.log(response.statusCode)
     console.log(response.body)
@@ -62,7 +62,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   }
   var requestPatch = client.emptyRequest()
   requestPatch.method = 'PATCH'
-  requestPatch.path = '/v3/api_keys'.concat(api_key_id)
+  requestPatch.path = '/v3/api_keys'.concat(apiKeyId)
   requestPatch.body = requestBody
   client.API(requestPatch, function (response) {
     console.log(response.statusCode)
@@ -80,7 +80,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   }
   var requestPut = client.emptyRequest()
   requestPut.method = 'PUT'
-  requestPut.path = '/v3/api_keys'.concat(api_key_id)
+  requestPut.path = '/v3/api_keys'.concat(apiKeyId)
   requestPut.body = requestBody
   client.API(requestPut, function (response) {
     console.log(response.statusCode)
@@ -91,7 +91,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   // DELETE
   var requestDelete = client.emptyRequest()
   requestDelete.method = 'DELETE'
-  requestDelete.path = '/v3/api_keys'.concat(api_key_id)
+  requestDelete.path = '/v3/api_keys'.concat(apiKeyId)
   client.API(requestDelete, function (response) {
     console.log(response.statusCode)
     console.log(response.body)
