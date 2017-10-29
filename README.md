@@ -97,6 +97,12 @@ client.API(request, function (response) {
 # Usage
 [Library Usage Documentation](https://github.com/sendgrid/nodejs-http-client/blob/master/USAGE.md)
 
+# Tests
+
+Tests can be run through a [Docker](https://www.docker.com) container which is defined in the [docker-compose.yml](docker-compose.yml) file.
+
+To run the tests, simply run `docker-compose up`.
+
 <a name="roadmap"></a>
 # Roadmap
 
