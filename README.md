@@ -95,6 +95,31 @@ client.API(request, function (response) {
 
 <a name="usage"></a>
 # Usage
+
+Following is an example using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
+
+First, update your environment with your [SENDGRID_API_KEY](https://app.sendgrid.com/settings/api_keys).
+
+```bash
+echo "export SENDGRID_API_KEY='YOUR_API_KEY'" > sendgrid.env
+echo "sendgrid.env" >> .gitignore
+source ./sendgrid.env
+```
+
+You can copy the .env_example file located in the "examples" folder to ```.env``` in your project's root.
+
+```cp examples/.env_sample .env```
+
+Then add your API Key into the file
+
+Here is the [full working code](https://github.com/sendgrid/nodejs-http-client/blob/master/examples/example.js).
+
+To run the example:
+
+```bash
+node examples/example
+```
+=======
 [Library Usage Documentation](https://github.com/sendgrid/nodejs-http-client/blob/master/USAGE.md)
 
 <a name="roadmap"></a>
