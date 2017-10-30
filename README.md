@@ -100,17 +100,13 @@ Following is an example using SendGrid. You can get your free account [here](htt
 
 First, update your environment with your [SENDGRID_API_KEY](https://app.sendgrid.com/settings/api_keys).
 
-```bash
-echo "export SENDGRID_API_KEY='YOUR_API_KEY'" > sendgrid.env
-echo "sendgrid.env" >> .gitignore
-source ./sendgrid.env
-```
-
 You can copy the .env_example file located in the "examples" folder to ```.env``` in your project's root.
 
 ```cp examples/.env_sample .env```
 
-Then add your API Key into the file
+Once you have edited the file and added your API Key, you can add the variable to your environment:
+```source .env```
+
 
 Here is the [full working code](https://github.com/sendgrid/nodejs-http-client/blob/master/examples/example.js).
 
