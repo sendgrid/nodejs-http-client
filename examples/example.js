@@ -11,7 +11,7 @@ function res(response) {
   console.log(response.statusCode)
   console.log(response.body)
   console.log(response.headers)
-};
+}
 
 // GET Collection
 var requestGet = client.emptyRequest()
