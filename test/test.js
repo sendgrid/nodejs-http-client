@@ -243,10 +243,10 @@ describe('Client', function () {
   })
 
   describe('Project files', function () {
-    // it('should have ./Docker file', function (done) {
-    //   checkFileOrDirectory('Docker')
-    //   done()
-    // })
+    it('should have ./Docker file', function (done) {
+      checkFileOrDirectory('Docker')
+      done()
+    })
 
     it('should have ./docker-compose.yml file', function (done) {
       checkFileOrDirectory('docker-compose.yml')
@@ -318,10 +318,10 @@ describe('Client', function () {
       done()
     })
     
-    // it('should have ./USE_CASES.md file', function (done) {
-    //   checkFileOrDirectory('USE_CASES.md')
-    //   done()
-    // })
+    it('should have ./USE_CASES.md file', function (done) {
+      checkFileOrDirectory('USE_CASES.md')
+      done()
+    })
 
     function checkFileOrDirectory(fileOrDirectory) {  
       try {
