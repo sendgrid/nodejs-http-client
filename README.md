@@ -100,6 +100,7 @@ We encourage contribution to our libraries, please see our [CONTRIBUTING](https:
 * [Feature Request](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#feature-request)
 * [Bug Reports](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#submit-a-bug-report)
 * [Improvements to the Codebase](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#improvements-to-the-codebase)
+* [Review Pull Requests](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#code-reviews)
 
 <a name="about"></a>
 # About
