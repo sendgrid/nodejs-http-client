@@ -9,6 +9,9 @@ node_js:
 - "lts/*"
 before_install:
 - npm install -g npm@2
+- npm install -g codecov
+script:
+- npm run cover
 notifications:
   hipchat:
     rooms:
