@@ -5,7 +5,7 @@
 [![npm version](https://badge.fury.io/js/sendgrid-rest.svg)](https://www.npmjs.com/package/sendgrid-rest)
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
 [![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/nodejs-http-client.svg)](https://github.com/sendgrid/nodejs-http-client/graphs/contributors)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
 **Quickly and easily access any RESTful or RESTful-like API.**
 
@@ -141,4 +141,4 @@ nodejs-http-client is maintained and funded by SendGrid, Inc. The names and logo
 
 <a name="license"></a>
 # License
-[The MIT License (MIT)](LICENSE.txt)
+[The MIT License (MIT)](LICENSE.md)
