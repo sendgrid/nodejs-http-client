@@ -5,7 +5,7 @@
 [![npm version](https://badge.fury.io/js/sendgrid-rest.svg)](https://www.npmjs.com/package/sendgrid-rest)
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
 [![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/nodejs-http-client.svg)](https://github.com/sendgrid/nodejs-http-client/graphs/contributors)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.txt)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
 **Quickly and easily access any RESTful or RESTful-like API.**
 
@@ -95,7 +95,34 @@ client.API(request, function (response) {
 
 <a name="usage"></a>
 # Usage
+
+Following is an example using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
+
+First, update your environment with your [SENDGRID_API_KEY](https://app.sendgrid.com/settings/api_keys).
+
+You can copy the .env_example file located in the "examples" folder to ```.env``` in your project's root.
+
+```cp examples/.env_sample .env```
+
+Once you have edited the file and added your API Key, you can add the variable to your environment:
+```source .env```
+
+
+Here is the [full working code](https://github.com/sendgrid/nodejs-http-client/blob/master/examples/example.js).
+
+To run the example:
+
+```bash
+node examples/example
+```
+=======
 [Library Usage Documentation](https://github.com/sendgrid/nodejs-http-client/blob/master/USAGE.md)
+
+# Tests
+
+Tests can be run through a [Docker](https://www.docker.com) container which is defined in the [docker-compose.yml](docker-compose.yml) file.
+
+To run the tests, simply run `docker-compose up`.
 
 <a name="roadmap"></a>
 # Roadmap
@@ -120,4 +147,4 @@ nodejs-http-client is maintained and funded by SendGrid, Inc. The names and logo
 
 <a name="license"></a>
 # License
-[The MIT License (MIT)](LICENSE.txt)
+[The MIT License (MIT)](LICENSE.md)
