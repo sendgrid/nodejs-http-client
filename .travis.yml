@@ -9,6 +9,8 @@ node_js:
 - "lts/*"
 before_install:
 - npm install -g npm@2
+script:
+- npm run test:cover
 notifications:
   hipchat:
     rooms:
