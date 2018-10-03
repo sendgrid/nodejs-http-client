@@ -1,14 +1,23 @@
 language: node_js
 node_js:
-- "4"
-- "5"
-- "6"
-- "7"
-- "8"
-- "node"
-- "lts/*"
+- '4'
+- '5'
+- '6'
+- '7'
+- '8'
+- node
+- lts/*
 before_install:
 - npm install -g npm@2
+before_deploy: 'npm --no-git-tag-version version $(node scripts/version)'
+deploy:
+  provider: npm
+  email:   '**Add NPM Account email**'
+  api_key: '**Add Encrypted API Key**'
+  on:
+    repo:   sendgrid/nodejs-http-client
+    tags:   false
+    branch: master
 notifications:
   hipchat:
     rooms:

@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "changelog-parser": "^2.5.0",
     "esdoc": "^1.0.3",
     "esdoc-coverage-plugin": "^1.1.0",
     "eslint": "^2.7.0",
