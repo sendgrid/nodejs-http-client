@@ -1,4 +1,4 @@
-Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
+Hello! Thank you for choosing to help contribute to one of the **SendGrid** open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
 
 - [CLAs and CCLAs](#clas-and-cclas)
 - [Roadmap & Milestones](#roadmap-and-milestones)
@@ -11,14 +11,14 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 - [Creating a Pull Request](#creating-a-pull-request)
 
 <a name="roadmap-and-milestones"></a>
-We use [Milestones](https://github.com/sendgrid/nodejs-http-client/milestones) to help define current roadmaps, please feel free to grab an issue from the current milestone. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
+We use [Milestones](https://github.com/sendgrid/nodejs-http-client/milestones) to help define current roadmaps, please feel free to grab an issue from the current milestone. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, the community reviews, comments and suggests for better changes. Additional PRs are welcomed and encouraged.
 
 <a name="clas-and-cclas"></a>
 ## CLAs and CCLAs
 
-Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
+Before you get started, SendGrid requires that a **SendGrid Contributor License Agreement (CLA)** be filled out by every contributor to a SendGrid open source project.
 
-Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions.  The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when making a contribution.  In this way the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
+Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions.  The CLA also clarifies the rights that SendGrid holds in each contribution. The CLA also helps to disambiguate the rights that each contributor can be granted by SendGrid whilst making a contribution.  In this way the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
 
 SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
 
@@ -39,24 +39,24 @@ The GitHub issue tracker is the preferred channel for library feature requests, 
 <a name="submit-a-bug-report"></a>
 ## Submit a Bug Report
 
-Note: DO NOT include your credentials in ANY code examples, descriptions, or media you make public.
+>**Note**: DO NOT include your credentials in ANY code examples, descriptions, or media that you make public.
 
-A software bug is a demonstrable issue in the code base. In order for us to diagnose the issue and respond as quickly as possible, please add as much detail as possible into your bug report.
+A software bug is a demonstrable issue in the code base. Please add as much detail as possible in your bug report so that we can diagnose the issue and respond as quickly as possible.
 
 Before you decide to create a new issue, please try the following:
 
-1. Check the Github issues tab if the identified issue has already been reported, if so, please add a +1 to the existing post.
-2. Update to the latest version of this code and check if issue has already been fixed
-3. Copy and fill in the Bug Report Template we have provided below
+1. Check the Github issues tab if the identified issue has already been reported, in that case, please add a +1 to the existing post.
+2. Update to the latest version of this code and check if issue has already been fixed.
+3. Copy and fill in the Bug Report Template we have provided below.
 
 ### Please use our Bug Report Template
 
-In order to make the process easier, we've included a [sample bug report template](https://github.com/sendgrid/nodejs-http-client/.github/ISSUE_TEMPLATE) (borrowed from [Ghost](https://github.com/TryGhost/Ghost/)). The template uses [GitHub flavored markdown](https://help.github.com/articles/github-flavored-markdown/) for formatting.
+In order to make the process easier, we've included a *[sample bug report template](https://github.com/sendgrid/nodejs-http-client/.github/ISSUE_TEMPLATE)* (borrowed from [Ghost](https://github.com/TryGhost/Ghost/)). The template uses [GitHub flavored markdown](https://help.github.com/articles/github-flavored-markdown/) for formatting.
 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
 
-We welcome direct contributions to the nodejs-http-client code base. Thank you!
+We welcome direct contributions to the **nodejs-http-client** code base. Thank you!
 
 ### Development Environment ###
 
@@ -64,8 +64,8 @@ We welcome direct contributions to the nodejs-http-client code base. Thank you!
 
 ##### Prerequisites #####
 
-- Node.js version 0.10, 0.12 or 4
-- Please see [package.json](https://github.com/sendgrid/nodejs-http-client/blob/master/package.json)
+- Node.JS version 0.10, 0.12 or 4
+- Please see [`package.json`](https://github.com/sendgrid/nodejs-http-client/blob/master/package.json)
 
 ##### Initial setup: #####
 
@@ -99,26 +99,27 @@ node ./examples/example.js
 
 **/examples**
 
-Working examples that demonstrate usage.
+Working examples that demonstrate the usage.
 
 **client.js**
 
 There is an object to hold both the request and response to the API server.
 
-The main function that does the heavy lifting (and external entry point) is `API`.
+The main function that does the heavy lifting (and external entry point) is **API**.
 
 <a name="testing"></a>
 ## Testing
 
-All PRs require passing tests before the PR will be reviewed.
+All PRs require passing tests before the PR is reviewed.
 
 All test files are in [`test/test.js`](https://github.com/sendgrid/nodejs-http-client/blob/master/test/test.js).
 
 For the purposes of contributing to this repo, please update the [`test.js`](https://github.com/sendgrid/nodejs-http-client/blob/master/test/test.js) file with unit tests as you modify the code.
 
 Run the test:
-
-`mocha`
+```bash
+mocha
+```
 
 <a name="style-guidelines-and-naming-conventions"></a>
 ## Style Guidelines & Naming Conventions
@@ -129,7 +130,7 @@ Generally, we follow the style guidelines as suggested by the official language.
 
 Please run your code through:
 
-- [ESLint](http://eslint.org/) with the standard style guide.
+- [ESLint](http://eslint.org/) with a standard style guide.
 - [esdoc](https://github.com/sendgrid/nodejs-http-client/blob/master/USAGE.md) to check the documentation coverage of your added code.
 
 <a name="creating-a-pull-request"></a>
@@ -141,8 +142,10 @@ Please run your code through:
    ```bash
    # Clone your fork of the repo into the current directory
    git clone https://github.com/sendgrid/nodejs-http-client
+   
    # Navigate to the newly cloned directory
    cd nodejs-http-client
+   
    # Assign the original repo to a remote called "upstream"
    git remote add upstream https://github.com/sendgrid/nodejs-http-client
    ```
@@ -162,14 +165,11 @@ Please run your code through:
    ```
 
 4. Commit your changes in logical chunks. Please adhere to these [git commit
-   message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely to be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/interactive-rebase)
-   feature to tidy up your commits before making them public.
+   message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) or your code is unlikely to be merged into the main project. Use Git's [interactive rebase](https://help.github.com/articles/interactive-rebase) feature to tidy up your commits before making them public.
 
-4a. Create tests.
+   4 *a*. Create tests.
 
-4b. Create or update the example code that demonstrates the functionality of this change to the code.
+   4 *b*. Create or update the example code that demonstrates the functionality of the changes to the code.
 
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
@@ -177,13 +177,12 @@ Please run your code through:
    git pull [--rebase] upstream master
    ```
 
-6. Push your topic branch up to your fork:
+7. Push your topic branch up to your fork:
 
    ```bash
    git push origin <topic-branch-name>
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description against the `master` branch. All tests must be passing before we will review the PR.
+8. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/) with a clear title and description against the **master branch**. All the tests must be passed before we review the PR.
 
-If you have any additional questions, please feel free to [email](mailto:dx@sendgrid.com) us or create an issue in this repo.
+If you have any questions, please feel free to [email](mailto:dx@sendgrid.com) us or create an issue in this repository.
