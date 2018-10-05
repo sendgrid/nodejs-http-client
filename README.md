@@ -7,13 +7,13 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/nodejs-http-client.svg)](https://github.com/sendgrid/nodejs-http-client/graphs/contributors)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md)
 
-**Quickly and easily access any RESTful or RESTful-like API.**
+**Quickly and easily access any RESTful or RESTful-*like* API.**
 
-If you are looking for the SendGrid API client library, please see [this repo](https://github.com/sendgrid/sendgrid-nodejs).
+If you are looking for the SendGrid API client library, please see this [repo](https://github.com/sendgrid/sendgrid-nodejs).
 
 # Announcements
 
-All updates to this library are documented in our [CHANGELOG](https://github.com/sendgrid/nodejs-http-client/blob/master/CHANGELOG.md).
+All the updates to this library are documented in our [CHANGELOG](https://github.com/sendgrid/nodejs-http-client/blob/master/CHANGELOG.md).
 
 # Table of Contents
 - [Installation](#installation)
@@ -29,13 +29,14 @@ All updates to this library are documented in our [CHANGELOG](https://github.com
 
 ## Prerequisites
 
-- Node.js version 0.10, 0.12 or 4
+- Node.JS version 0.10, 0.12 or 4
 
-You need to have a API key to use the app. To configure the API key in the environment variables follow these steps.
- - create .env file in the root directory of the project.
- - Copy the contents of .env_sample file in to the .env file
- - Once you have obtained the API key, find the environment variable SENDGRID_API_KEY and assign your API key as it's value.
- As an example it should look like this
+You need to have a **API key** to use the app. To configure the API key in the environment variables follow these steps:
+ - create `.env` file in the root directory of the project.
+ - Copy the contents of `.env_sample` file in to the `.env` file
+ - Once you have obtained the API key, find the environment variable - `SENDGRID_API_KEY` and assign this value to your API key.
+
+ It should look like this:
  ```
  SENDGRID_API_KEY='<YOUR_API_KEY>';
  ```
@@ -50,7 +51,7 @@ npm install sendgrid-rest
 <a name="quick-start"></a>
 # Quick Start
 
-`GET /your/api/{param}/call`
+**`GET`**`/your/api/{param}/call`
 
 ```javascript
 var Client = require('sendgrid-rest').Client
@@ -67,7 +68,7 @@ client.API(request, function (response) {
 })
 ```
 
-`POST /your/api/{param}/call` with headers, query parameters and a request body.
+**`POST`**`/your/api/{param}/call` with headers, query parameters and a request body.
 
 ```javascript
 var Client = require('sendgrid-rest').Client
@@ -100,13 +101,16 @@ Following is an example using SendGrid. You can get your free account [here](htt
 
 First, update your environment with your [SENDGRID_API_KEY](https://app.sendgrid.com/settings/api_keys).
 
-You can copy the .env_example file located in the "examples" folder to ```.env``` in your project's root.
+You can copy the `.env_example` file located in the "examples" folder to `.env` in your project's root.
 
-```cp examples/.env_sample .env```
+```bash
+cp examples/.env_sample .env
+```
 
-Once you have edited the file and added your API Key, you can add the variable to your environment:
-```source .env```
-
+Once you have edited the file and added your API Key, you can add the variables to your environment:
+```bash
+source .env
+```
 
 Here is the [full working code](https://github.com/sendgrid/nodejs-http-client/blob/master/examples/example.js).
 
@@ -115,24 +119,27 @@ To run the example:
 ```bash
 node examples/example
 ```
-=======
+---
 [Library Usage Documentation](https://github.com/sendgrid/nodejs-http-client/blob/master/USAGE.md)
 
 # Tests
 
-Tests can be run through a [Docker](https://www.docker.com) container which is defined in the [docker-compose.yml](docker-compose.yml) file.
+Tests can be run through a [Docker](https://www.docker.com) container which is defined in the [`docker-compose.yml`](docker-compose.yml) file.
 
-To run the tests, simply run `docker-compose up`.
+To run the tests, simply run 
+```bash
+docker-compose up
+```
 
 <a name="roadmap"></a>
 # Roadmap
 
-If you are interested in the future direction of this project, please take a look at our [milestones](https://github.com/sendgrid/nodejs-http-client/milestones). We would love to hear your feedback.
+If you are interested in the future directions of this project, please take a look at our [milestones](https://github.com/sendgrid/nodejs-http-client/milestones). We would love to hear your feedback.
 
 <a name="contribute"></a>
 # How to Contribute
 
-We encourage contribution to our libraries, please see our [CONTRIBUTING](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md) guide for details.
+We encourage contributions to our libraries, please see our [CONTRIBUTING](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md) guide for details.
 
 * [Feature Request](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#feature-request)
 * [Bug Reports](https://github.com/sendgrid/nodejs-http-client/blob/master/CONTRIBUTING.md#submit-a-bug-report)
@@ -141,9 +148,9 @@ We encourage contribution to our libraries, please see our [CONTRIBUTING](https:
 <a name="about"></a>
 # About
 
-nodejs-http-client is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
+**nodejs-http-client** is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
 
-nodejs-http-client is maintained and funded by SendGrid, Inc. The names and logos for nodejs-http-client are trademarks of SendGrid, Inc.
+**nodejs-http-client** is maintained and funded by SendGrid, Inc. The names and logos for **nodejs-http-client** are trademarks of SendGrid, Inc.
 
 <a name="license"></a>
 # License
