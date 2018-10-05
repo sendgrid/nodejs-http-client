@@ -1,6 +1,6 @@
-Following Document provides several use cases of how to make RESTful method calls for an http-client. Please [open an issue](https://github.com/sendgrid/nodejs-http-client/issues) or make a pull request for any use cases you would like us to document here. Thank you!
+Following document provides several use cases of how to make RESTful method calls for an http-client. Please [open an issue](https://github.com/sendgrid/nodejs-http-client/issues) or make a pull request for any use cases you would like us to document here. Thank you!
 
-# RESTful API Calls-
+# RESTful API Calls
 
 - GET
 - POST
@@ -8,11 +8,11 @@ Following Document provides several use cases of how to make RESTful method call
 - PUT
 - DEL
 
-In the following examples, it assumed you have got your own unique Sendgrid API key.
+In the following examples, it is assumed that you have your own unique **Sendgrid API key**.
 
-The Following Requests are made using Python.
+The Following Requests are made using **`Python`**.
 
-Please Import these libraries at the start of the program and install them using pip command if not already done before.
+Please Import these libraries in the beginning of the program and install them using `pip` command if not already done before.
 
 ```python
 import sendgrid
