@@ -8,7 +8,7 @@ If you can't find a solution below, please open an [issue](https://github.com/se
 <a name="request-body"></a>
 ## Viewing the Request Body
 
-When debugging or testing, it may be useful to examine the raw request body to compare against the [documented format](https://sendgrid.com/docs/API_Reference/api_v3.html).
+While debugging or testing, it may be useful to examine the raw request body to compare with the [documented format](https://sendgrid.com/docs/API_Reference/api_v3.html).
 
 You can do this with something like:
 ```javascript
