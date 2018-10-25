@@ -34,7 +34,7 @@ All updates to this library are documented in our [CHANGELOG](https://github.com
 You need to have a API key to use the app. To configure the API key in the environment variables follow these steps.
  - create .env file in the root directory of the project.
  - Copy the contents of .env_sample file in to the .env file
- - Once you have obtained the API key, find the environment variable SENDGRID_API_KEY and assign your API key as it's value.
+ - Once you have obtained the API key, find the environment variable SENDGRID_API_KEY and assign your API key as its value.
  As an example it should look like this
  ```
  SENDGRID_API_KEY='<YOUR_API_KEY>';
@@ -96,7 +96,7 @@ client.API(request, function (response) {
 <a name="usage"></a>
 # Usage
 
-Following is an example using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
+The following is an example of using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
 
 First, update your environment with your [SENDGRID_API_KEY](https://app.sendgrid.com/settings/api_keys).
 

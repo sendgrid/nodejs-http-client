@@ -1,4 +1,4 @@
-Following is an example using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
+The following is an example of using SendGrid. You can get your free account [here](https://sendgrid.com/free?source=nodejs-http-client).
 
 First, update your environment with your [SENDGRID_API_KEY](https://app.sendgrid.com/settings/api_keys).
 
@@ -17,13 +17,13 @@ node examples/example
 ```
 
  # Documentation
- 
+
  If you would like to auto-generate documentation of the packages, you can do so locally by running:
 
  `./node_modules/.bin/esdoc`
 
- Using the .esdoc.json file, esdoc will create documentation in the docs directory. 
- 
+ Using the .esdoc.json file, esdoc will create documentation in the docs directory.
+
  ## Checking docs coverage
- 
+
  You will find a coverage.json file in the **docs** directory. This will contain information about the documentation coverage for each of the different files in this repo.

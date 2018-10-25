@@ -11,7 +11,7 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 - [Creating a Pull Request](#creating-a-pull-request)
 
 <a name="roadmap-and-milestones"></a>
-We use [Milestones](https://github.com/sendgrid/nodejs-http-client/milestones) to help define current roadmaps, please feel free to grab an issue from the current milestone. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
+We use [Milestones](https://github.com/sendgrid/nodejs-http-client/milestones) to help define current roadmaps. Please feel free to grab an issue from the current milestone. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
 
 <a name="clas-and-cclas"></a>
 ## CLAs and CCLAs

@@ -1,4 +1,4 @@
-Following Document provides several use cases of how to make RESTful method calls for an http-client. Please [open an issue](https://github.com/sendgrid/nodejs-http-client/issues) or make a pull request for any use cases you would like us to document here. Thank you!
+The following document provides several use cases of how to make RESTful method calls for an http-client. Please [open an issue](https://github.com/sendgrid/nodejs-http-client/issues) or make a pull request for any use cases you would like us to document here. Thank you!
 
 # RESTful API Calls-
 
@@ -8,11 +8,11 @@ Following Document provides several use cases of how to make RESTful method call
 - PUT
 - DEL
 
-In the following examples, it assumed you have got your own unique Sendgrid API key.
+In the following examples, it assumed you have got your own unique SendGrid API key.
 
-The Following Requests are made using Python.
+The following requests are made using Python.
 
-Please Import these libraries at the start of the program and install them using pip command if not already done before.
+Please import these libraries at the start of the program and install them using pip command if not already done before.
 
 ```python
 import sendgrid
@@ -186,7 +186,7 @@ print(response.headers)
 
 ```python
 data = {
-  "name": "pet", 
+  "name": "pet",
   "type": "text"
 }
 response = sg.client.contactdb.custom_fields.post(request_body=data)
@@ -226,7 +226,7 @@ print(response.headers)
 
 ```python
 data = [
-  "recipient_id1", 
+  "recipient_id1",
   "recipient_id2"
 ]
 list_id = "test_url_param"
@@ -243,25 +243,25 @@ print(response.headers)
 data = {
   "conditions": [
     {
-      "and_or": "", 
-      "field": "last_name", 
-      "operator": "eq", 
+      "and_or": "",
+      "field": "last_name",
+      "operator": "eq",
       "value": "Miller"
-    }, 
+    },
     {
-      "and_or": "and", 
-      "field": "last_clicked", 
-      "operator": "gt", 
+      "and_or": "and",
+      "field": "last_clicked",
+      "operator": "gt",
       "value": "01/02/2015"
-    }, 
+    },
     {
-      "and_or": "or", 
-      "field": "clicks.campaign_identifier", 
-      "operator": "eq", 
+      "and_or": "or",
+      "field": "clicks.campaign_identifier",
+      "operator": "eq",
       "value": "513"
     }
-  ], 
-  "list_id": 4, 
+  ],
+  "list_id": 4,
   "name": "Last Name Miller"
 }
 response = sg.client.contactdb.segments.post(request_body=data)
@@ -293,8 +293,8 @@ print(response.headers)
 ```python
 data = [
   {
-    "email": "jones@example.com", 
-    "first_name": "Guy", 
+    "email": "jones@example.com",
+    "first_name": "Guy",
     "last_name": "Jones"
   }
 ]
@@ -305,19 +305,19 @@ print(response.headers)
 ```
 
 ### Update a segment #
-##### PATCH /contactdb/segments/{segment_id} # 
+##### PATCH /contactdb/segments/{segment_id} #
 
 ```python
 data = {
   "conditions": [
     {
-      "and_or": "", 
-      "field": "last_name", 
-      "operator": "eq", 
+      "and_or": "",
+      "field": "last_name",
+      "operator": "eq",
       "value": "Miller"
     }
-  ], 
-  "list_id": 5, 
+  ],
+  "list_id": 5,
   "name": "The Millers"
 }
 params = {'segment_id': 'test_string'}
@@ -358,9 +358,9 @@ print(response.headers)
 
 ```python
 data = [
-  1, 
-  2, 
-  3, 
+  1,
+  2,
+  3,
   4
 ]
 response = sg.client.contactdb.lists.delete(request_body=data)
@@ -374,7 +374,7 @@ print(response.headers)
 
 ```python
 data = [
-  "recipient_id1", 
+  "recipient_id1",
   "recipient_id2"
 ]
 response = sg.client.contactdb.recipients.delete(request_body=data)
