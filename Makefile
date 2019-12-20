@@ -1,4 +1,4 @@
-  .PHONY: install test
+.PHONY: install test
 
 install:
 	npm install
