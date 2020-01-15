@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+[2020-01-15] Version 2.5.1
+--------------------------
+**Library - Chore**
+- [PR #119](https://github.com/sendgrid/nodejs-http-client/pull/119): prep the repo for automated releasing. Thanks to [@childish-sambino](https://github.com/childish-sambino)!
+
+
 [2019-12-20] Version 2.5.0
 --------------------------
 **Library - Chore**
