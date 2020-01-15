@@ -1,7 +1,10 @@
-.PHONY: install test
+.PHONY: clean install test
 
-install:
+clean:
+	@rm -rf node_modules
+
+install: clean
 	npm install
 
-test:
+test: install
 	npm test
