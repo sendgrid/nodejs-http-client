@@ -41,3 +41,6 @@ node_modules
 
 # Environment files
 .env/*.*
+
+# Backup package.json files created during release ###
+*.bak
