@@ -327,7 +327,7 @@ describe('LICENSE', function() {
     var licenseYear = licenseFile.split('\n')[2].split(' ')[2];
     var thisYear = (new Date()).getFullYear();
 
-    if (licenseYear !== thisYear) {
+    if (licenseYear != thisYear) {
       assert.fail(thisYear, licenseYear, "LICENSE year is not correct")
     } else {
       done()
