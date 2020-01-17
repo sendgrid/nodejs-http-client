@@ -322,16 +322,15 @@ describe('nodejs-http-client repo', function() {
 })
 
 describe('LICENSE', function() {
-  it('should have correct end year', function(done) {
-    var licenseFile = fs.readFileSync('LICENSE.md', 'utf8')
-    var licenseYearRange = licenseFile.split('\n')[2].split(' ')[2]
-    var endYear = licenseYearRange.split('-')[1]
-    var thisYear = (new Date()).getFullYear()
+  it('should have correct year', function(done) {
+    var licenseFile = fs.readFileSync('LICENSE.md', 'utf8');
+    var licenseYear = licenseFile.split('\n')[2].split(' ')[2];
+    var thisYear = (new Date()).getFullYear();
 
-    if (endYear != thisYear) {
-      assert.fail(thisYear, endYear, "LICENSE end year is not correct")
+    if (licenseYear !== thisYear) {
+      assert.fail(thisYear, licenseYear, "LICENSE year is not correct")
     } else {
       done()
     }
   })
-})
+});
