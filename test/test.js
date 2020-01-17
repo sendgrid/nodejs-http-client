@@ -324,7 +324,7 @@ describe('nodejs-http-client repo', function() {
 describe('LICENSE', function() {
   it('should have correct year', function(done) {
     var licenseFile = fs.readFileSync('LICENSE.md', 'utf8');
-    var licenseYear = licenseFile.split('\n')[2].split(' ')[2];
+    var licenseYear = licenseFile.split('\n')[2].split(/[ ,]/)[2];
     var thisYear = (new Date()).getFullYear();
 
     if (licenseYear != thisYear) {
