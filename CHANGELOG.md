@@ -3,6 +3,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+[2020-02-19] Version 2.6.0
+--------------------------
+**Library - Feature**
+- [PR #93](https://github.com/sendgrid/nodejs-http-client/pull/93): Added type definitions. Thanks to [@Strum355](https://github.com/Strum355)!
+
+
 [2020-01-22] Version 2.5.2
 --------------------------
 **Library - Docs**
