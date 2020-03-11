@@ -6,8 +6,8 @@ globalRequest.host = 'api.sendgrid.com';
 // You must add your SendGrid API Key to your OS Environment
 globalRequest.headers['Authorization'] = 'Bearer '.concat(process.env.SENDGRID_API_KEY)
 var client = new Client(globalRequest)
- 
-function res(response) {
+
+function logResponse(response) {
   console.log(response.statusCode)
   console.log(response.body)
   console.log(response.headers)
@@ -20,8 +20,8 @@ requestGet.path = '/v3/api_keys'
 requestGet.queryParams['limit'] = 100
 requestGet.queryParams['offset'] = 0
 client.API(requestGet,function (response){
-    res(response)
-  })
+  logResponse(response)
+})
 
 // POST
 var requestBody = {
@@ -39,7 +39,7 @@ requestPost.body = requestBody
 requestPost.headers['X-Test'] = 'test'
 function createAPIKey (callback) {
   client.API(requestPost, function (response) {
-    res(response)
+    logResponse(response)
     var body = JSON.parse(response.body)
     callback(body.api_key_id)
   })
@@ -53,7 +53,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   requestGetSingle.method = 'GET'
   requestGetSingle.path = '/v3/api_keys'.concat(api_key_id)
   client.API(requestGetSingle, function (response) {
-    res(response)
+    logResponse(response)
   })
 
   // PATCH
@@ -65,7 +65,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   requestPatch.path = '/v3/api_keys'.concat(api_key_id)
   requestPatch.body = requestBody
   client.API(requestPatch, function (response) {
-    res(response)
+    logResponse(response)
   })
 
   // PUT
@@ -81,7 +81,7 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   requestPut.path = '/v3/api_keys'.concat(api_key_id)
   requestPut.body = requestBody
   client.API(requestPut, function (response) {
-    res(response)
+    logResponse(response)
   })
 
   // DELETE
@@ -89,6 +89,6 @@ createAPIKey(function (returnValue) { // This ensures we POST a new key first, t
   requestDelete.method = 'DELETE'
   requestDelete.path = '/v3/api_keys'.concat(api_key_id)
   client.API(requestDelete, function (response) {
-    res(response)
+    logResponse(response)
   })
 })
