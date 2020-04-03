@@ -16,3 +16,11 @@ deploy:
     on:
       tags: true
       node: 10
+
+notifications:
+  slack:
+    if: branch = master
+    on_success: never
+    on_failure: change
+    rooms:
+      - secure: QawILOoaJQWghcHWYxFfibatqvka0INzDboLuzWEvdDpCbfHUd4FXXvMGLHBUoTiB2vvey0edCCaCsrMoqJEJ1fyYZYS4XuYN+XGN+FH2GAoKi+j07om9V1ChuUDcXGB+sqMTM09mGvRGk95hLzkI/bRzQVA+ITaRpdWKJYnD0zZWPuQXi6sLVyMQrHqVOYLyf3avN5mJyqncatZkCpMlhQJvn/aIM0wmToifM6HC1xp4lNU3Rq6h+gHyJP+TZZ5zBc1b388UQDjpLHAoB8ZpIqOlvQJ9cwRvSfqQUXWXZrAYS4wBZvq5Y2YpRm6sHZ6pfs/aCJpIVZ3tyTctqTnHlddesBfGyxzbVW/Wl7ewJUhtphxcaVNweuzVnVVj4ooQr58hKlvJtZlrE1wmEluQ0OL0zF4tfBmq3fonCgvWXiQGgGwEC/DmDSxZInGnyHGg3Ew/7SPBhoGWB+g1B90Og5RtyMe/IUbyRXM4jFPCPdv8IiE3zmDyzDVkbjh+YX06F2pYYFPoyFRNawKtx6vGrV0Ta/o08E3tPrtQKxGkwcn+6zIQVuXw9onswnkiZwCDajcI+Yyi/NP9+OK5bSDPIqnuFsMZoEROKGGRUfUFDGyEStw2WdGmMCGiSJjCEHP75l4u4nPhft8sk28/xUC6NjTWoJahthYW08dW+0MuQQ=
