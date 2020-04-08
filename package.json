@@ -1,7 +1,7 @@
 {
-  "author": "SendGrid <dx@sendgrid.com> (SendGrid.com)",
+  "author": "SendGrid <help@twilio.com> (SendGrid.com)",
   "contributors": [
-    "Elmer Thomas <elmer.thomas@sendgrid.com>"
+    "Elmer Thomas <ethomas@twilio.com>"
   ],
   "name": "sendgrid-rest",
   "description": "HTTP REST client, simplified for Node.js.",
