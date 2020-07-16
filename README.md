@@ -1,3 +1,6 @@
+**This repo is no longer maintained. Please use https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/client instead.**
+
+
 ![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
 
 [![Build Status](https://travis-ci.org/sendgrid/nodejs-http-client.svg?branch=master)](https://travis-ci.org/sendgrid/nodejs-http-client)
