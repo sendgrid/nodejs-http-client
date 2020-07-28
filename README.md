@@ -1,4 +1,4 @@
-**This repo is no longer maintained. Please use https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/client instead.**
+**This repo is no longer maintained. Please use https://github.com/sendgrid/sendgrid-nodejs/tree/HEAD/packages/client instead.**
 
 
 ![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
